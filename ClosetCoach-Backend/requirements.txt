@@ -1,0 +1,10 @@
+opencv-python
+numpy
+scikit-learn
+pillow
+tensorflow
+tqdm
+firebase-admin
+streamlit
+flask
+flask-cors

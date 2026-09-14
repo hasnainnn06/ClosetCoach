@@ -1,0 +1,73 @@
+# ==========================================
+# ClosetCoach - Root .gitignore
+# ==========================================
+
+# Dependencies
+node_modules/
+*/node_modules/
+*/*/node_modules/
+package-lock.json
+
+# Python Virtual Environments
+venv/
+*/venv/
+.venv/
+env/
+ENV/
+
+# Python Caches & Bytecode
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Sensitive Environment & Secrets
+.env
+.env*.local
+*.env
+firebase-service-account*.json
+*service-account*.json
+
+# Frontend Build outputs
+dist/
+*/dist/
+dist-ssr/
+build/
+*.local
+
+# Datasets & Heavy ML Artifacts (prevent GitHub file limit errors)
+ClosetCoach-Backend/data/
+*/data/
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.keras
+*.onnx
+*.pt
+*.pth
+*.pb
+
+# Logs & Runtime files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Temp & Scratch files
+temp_*
+*.tmp
+*.temp
+final_outfit.png
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
