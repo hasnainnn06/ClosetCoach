@@ -3,7 +3,7 @@
  * Handles all communication with the Python ML backend
  */
 
-const API_BASE = 'http://localhost:5050';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5050';
 
 /**
  * Generate outfit from dataset (Demo mode - no login required)
